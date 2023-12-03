@@ -1,4 +1,3 @@
-import Control.Monad ()
 import Paths_adventofcode2023 (getDataFileName)
 import qualified Data.Text as T
 import Data.List (foldl')

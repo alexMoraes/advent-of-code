@@ -1,4 +1,12 @@
-module Lib (someFunc) where
+module Lib (readLines, mapIndex) where
 
-someFunc :: IO ()
-someFunc = putStrLn "Hello world!"
+import Paths_adventofcode2023 (getDataFileName)
+
+readLines :: FilePath -> IO [String]
+readLines fileName = do
+  path <- getDataFileName fileName
+  contents <- readFile path
+  pure $ lines contents
+
+mapIndex :: (a -> Int -> b) -> [a] -> [b]
+mapIndex f l = zipWith f l [0..]
