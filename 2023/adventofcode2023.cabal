@@ -27,6 +27,8 @@ data-files:
     day03/input.txt
     day04/example.txt
     day04/input.txt
+    day05/example.txt
+    day05/input.txt
 data-dir:       inputs
 
 source-repository head
@@ -99,6 +101,21 @@ executable day04
       Paths_adventofcode2023
   hs-source-dirs:
       app/day04
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adventofcode2023
+    , base >=4.7 && <5
+    , text
+  default-language: Haskell2010
+
+executable day05
+  main-is: Main.hs
+  other-modules:
+      Paths_adventofcode2023
+  autogen-modules:
+      Paths_adventofcode2023
+  hs-source-dirs:
+      app/day05
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       adventofcode2023

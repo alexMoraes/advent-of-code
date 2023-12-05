@@ -1,6 +1,6 @@
-import qualified Data.Text as T (splitOn, pack, strip, unpack, replace)
 import Lib (readLines)
 import Data.Foldable ( Foldable(foldl') )
+import qualified Data.Text as T
 
 parseLine :: String -> ([Int], [Int])
 parseLine l = do
