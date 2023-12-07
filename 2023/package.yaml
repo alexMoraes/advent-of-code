@@ -93,6 +93,16 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - adventofcode2023
+  day07:
+    main:                Main.hs
+    source-dirs:         app/day07
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - adventofcode2023
+    - containers
 
 
 # tests:
