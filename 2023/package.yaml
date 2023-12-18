@@ -123,6 +123,17 @@ executables:
     dependencies:
     - adventofcode2023
     - containers
+  day10:
+    main:                Main.hs
+    source-dirs:         app/day10
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - adventofcode2023
+    - containers
+    - hashmap
 
 
 # tests:
