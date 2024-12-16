@@ -101,6 +101,19 @@ func Part2() {
 	fmt.Println(tokens)
 }
 
+// We need to find natural solutions for the system
+// n*Ax + m*Bx = Px
+// n*Ay + m*By = Py
+//
+// For that we need to find the determinant 'det' of the matrix
+// |Ax Bx|
+// |Ay By|
+//
+// Then the coefficients become
+// m = (Ax*Py - Ay*Px)/det
+// n = (Px - m*Bx) / Ax
+//
+// If both m and n are positive integers, they are valid solutions for the system
 func calculateTokens(machine Machine) (tokens int) {
 	tokens = 0
 	det := machine.ButtonA.X*machine.ButtonB.Y - machine.ButtonA.Y*machine.ButtonB.X
