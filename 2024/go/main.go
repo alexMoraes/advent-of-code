@@ -1,10 +1,10 @@
 package main
 
 import (
-	"aoc2024/day16"
+	"aoc2024/day18"
 )
 
 func main() {
-	day16.Part1()
-	day16.Part2()
+	day18.Part1()
+	day18.Part2()
 }
